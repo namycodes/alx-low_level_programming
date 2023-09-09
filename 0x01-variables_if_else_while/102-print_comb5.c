@@ -17,20 +17,19 @@ int main(void)
 		{
 			if (i != j)
 			{
-				putchar(i / 10 + '0');   /* Print first digit of i */
-				putchar(i % 10 + '0');   /* Print second digit of i */
-				putchar(' ');            /* Print space */
-                		putchar(j / 10 + '0');   /* Print first digit of j */
-                		putchar(j % 10 + '0');   /* Print second digit of j */
-                		if (i != 98 || j != 99)
-                		{
-                    			putchar(',');        /* Print comma if not the last combination */
-                    			putchar(' ');        /* Print space */
-                		}
-            		}
-        	}
-    	}
-	putchar('\n'); /* Print newline character */
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
+				putchar(' ');
+				putchar(j / 10 + '0');
+				putchar(j % 10 + '0');
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
 	return (0);
 }
-
