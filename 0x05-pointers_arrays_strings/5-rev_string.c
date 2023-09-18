@@ -9,7 +9,7 @@
 void rev_string(char  *s)
 {
 	char word;
-	int i,length,length1;
+	int i, length, length1;
 
 	length = 0;
 	length1 = 0;
