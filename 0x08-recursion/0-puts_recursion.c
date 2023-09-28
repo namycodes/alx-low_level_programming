@@ -1,11 +1,20 @@
 #include "main.h"
+
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _puts_recursion - print a string.
+ * @s: pointer to char
+ * Return: No.
  */
-int main(void)
+
+void _puts_recursion(char *s)
 {
-	_puts_recursion(s);
-	return (0);
+	if (*s == '\0')
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar(*s);
+		_puts_recursion(s +1 );
+	}
 }
