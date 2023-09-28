@@ -1,7 +1,5 @@
 #include "main.h"
 
-int tmp_prime(int n, int i);
-
 /**
  * divisors - number is prime?
  * @n: integer params
@@ -15,7 +13,7 @@ int divisors(int num1, int num2)
 	{
 		return (0);
 	}
-	else if (num2 / 2 > n)
+	else if (num2 / 2 > num1)
 	{
 		return (divisors(num1 + 2, num2));
 	}
