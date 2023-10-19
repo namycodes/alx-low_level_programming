@@ -1,12 +1,20 @@
 #include <stdio.h>
 
 /**
- * cmain - function executed before main
+ * printBeforeMainFunc - function executed before main
  * Return: no return.
  */
-
-void __attributes__ ((constructors)) cmain()
+void printBeforeMainFunc()
 {
-	printf("You're beat! and yet, you must allow");
-	printf(",\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow, \nI bore my house upon my back!\n");
+}
+/**
+ * main- main funtion printing the words
+ * Return: Returns 0
+ */
+int main(void)
+{
+	printBeforeMaiFunc();
+	printf("Hello from main function!\n");
+	return (0);
 }
