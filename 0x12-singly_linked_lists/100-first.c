@@ -4,9 +4,10 @@
  * printBeforeMainFunc - function executed before main
  * Return: no return.
  */
-void printBeforeMainFunc()
+void printBeforeMainFunc(void)
 {
-	printf("You're beat! and yet, you must allow, \nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow, \n"
+			"I bore my house upon my back!\n");
 }
 /**
  * main- main funtion printing the words
