@@ -10,6 +10,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 {
     /* create a new node allocate memory*/
 	listint_t *new_node_data = malloc(sizeof(listint_t));
+
 	if (new_node_data == NULL)
 		return (NULL);
 	/* assign the data value and set p to NULL */
@@ -22,12 +23,13 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (new_node_data);
 	}
 	/* otherwise, traverse the list until it has reached the last node */
-	listint_t *last = *head;
-	while (last->next != NULL)
-		last = last->next;
+	listint_t *last_val = *head;
+
+	while (last_val->next != NULL)
+		last_val = last_val->next;
 
 	/* make the next poinew node */
-	last->next = new_node_data;
+	last_val->next = new_node_data;
 
 	/* returns the new node */
 	return (new_node_data);
