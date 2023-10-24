@@ -22,14 +22,14 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = new_node_data;
 		return (new_node_data);
 	}
-	/* otherwise, traverse the list until it has reached the last node */
-	listint_t *last_val = *head;
+	/* traverse the list until it has reached the last node */
+	listint_t *last = *head;
 
-	while (last_val->next != NULL)
-		last_val = last_val->next;
+	while (last->next != NULL)
+		last = last->next;
 
 	/* make the next poinew node */
-	last_val->next = new_node_data;
+	last->next = new_node_data;
 
 	/* returns the new node */
 	return (new_node_data);
