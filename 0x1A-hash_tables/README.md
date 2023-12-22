@@ -1,0 +1,1 @@
+Hash tables by namycodes
